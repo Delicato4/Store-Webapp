@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="" />
+    <title>webapp store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      .checked {
+        color: orange;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="first-page">
+          <div class="container-navbar">
+            <li class="logo" href="">DOUCEUR</li>
+            <li href="">Home</li>
+            <li href="">Deals</li>
+            <li href="">New Arrivals</li>
+            <li href="">Sign in</li>
+            <li href="">Sign Up</li>
+          </div>
+          <div class="container-header">
+            <img class="image1" src="images/clothes.jpg" alt="" />
+            <div class="image-text">
+              <img class="image2" src="imageFs/clothes.jpg" alt="" />
+              <div class="text-container">
+                <span class="ULTIMATE">ULTIMATE</span>
+                <br />
+                <span class="SALE">SALE</span>
+                <br />
+                <span class="NEW-COLLECTION">NEW COLLECTION</span>
+                <br />
+                <span href="" class="SHOP-NOW">SHOP NOW</span>
+              </div>
+              <img class="image4" src="images/clothes.jpg" alt="" />
+            </div>
+
+            <img class="image3" src="images/clothes.jpg" alt="" />
+          </div>
+          <div class="brands">
+            <span id="CHANEL"> CHANEL</span>
+            <span id="LOUIS-VUITTON"> LOUIS VUITTON</span>
+            <span id="PRADA"> PRADA</span>
+            <span id="CALVIN-KLEIN"> CALVIN KLEIN</span>
+            <span id="DENIM"> DENIM</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="section2">
+        <div class="container-leftside">
+          <div class="header-month-deals">
+            <h1 id="header-month-deals">Deals Of The Month</h1>
+          </div>
+          <div class="Detail-month-deals">
+            <p id="Detail-month-deals">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+              tenetur sunt incidunt id provident sequi nam molestiae quos ex
+              ratione? A itaque alias laboriosam officia quos distinctio dolor
+              quidem repudiandae.
+            </p>
+          </div>
+          <div class="button-buynow-month-deals">
+            <a id="button-month-deals" href="">Buy Now</a>
+          </div>
+
+          <div class="warning-month-deals">
+            <h3 id="warning-month-deals">Hurry, Before It’s Too Late!</h3>
+          </div>
+          <div class="timer-month-deals">
+            <div class="countdown-container">
+              <div class="countdown-box">
+                <div class="time-box">
+                  <div class="digits" id="days">00</div>
+                  <div class="label">Days</div>
+                </div>
+                <div class="time-box">
+                  <div class="digits" id="hours">00</div>
+                  <div class="label">Hr</div>
+                </div>
+                <div class="time-box">
+                  <div class="digits" id="minutes">00</div>
+                  <div class="label">Mins</div>
+                </div>
+                <div class="time-box">
+                  <div class="digits" id="seconds">00</div>
+                  <div class="label">Sec</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-rightside">
+          <div class="slider-container">
+            <div class="slider">
+              <div class="slide">
+                <img src="images/clothes.jpg" alt="Fashion Model 1" />
+                <div class="slide-content">
+                  <h3>01 — Spring Sale</h3>
+                  <p>30% OFF</p>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="images/clothes.jpg" alt="Fashion Model 2" />
+              </div>
+              <div class="slide">
+                <img src="images/clothes.jpg" alt="Fashion Model 3" />
+              </div>
+            </div>
+
+            <button class="slider-button prev" onclick="moveSlide(-1)">
+              ❮
+            </button>
+            <button class="slider-button next" onclick="moveSlide(1)">❯</button>
+
+            <div class="slider-dots">
+              <span class="dot active" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+          </div>
+
+          <script src="main.js"></script>
+        </div>
+      </div>
+
+      <div class="section3">
+        <div class="container-section3">
+          <div class="header-section3">
+            <h2 id="header-section3">New Arrivals</h2>
+          </div>
+          <div class="detail-section3">
+            <p id="detail-section3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+              eaque rem earum obcaecati voluptatibus culpa dolores dolor, quidem
+              aut
+            </p>
+          </div>
+          <div class="sort-section3">
+            <a id="tag-section3" href="">Men's Fashion</a>
+            <a id="tag-section3" href="">Women's Fashion</a>
+            <a id="tag-section3" href="">Women Accessories</a>
+            <a id="tag-section3" href="">Men Accessories</a>
+            <a id="tag-section3" href="">Discount Deals</a>
+          </div>
+          <div class="content-section3">
+            <div id="card-section">
+              <div class="img-card">
+                <img id="img-incard" src="images/clothes.jpg" alt="" />
+              </div>
+              <div class="inside-card">
+                <div class="left-container-incard">
+                  <h4 id="H-card">shiny dress</h4>
+                  <p id="p-card">al karam</p>
+                  <p>custumers</p>
+                  <h6>Price: $50</h6>
+                </div>
+
+                <div class="rating">
+                  <div class="stars-card">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                  </div>
+                  <div class="soldout-card"><p>Almost Sold Out</p></div>
+                </div>
+              </div>
+            </div>
+            <div id="card-section">
+              <div class="img-card">
+                <img id="img-incard" src="images/clothes.jpg" alt="" />
+              </div>
+              <div class="inside-card">
+                <div class="left-container-incard">
+                  <h4 id="H-card">shiny dress</h4>
+                  <p id="p-card">al karam</p>
+                  <p>custumers</p>
+                  <h6>Price: $50</h6>
+                </div>
+
+                <div class="rating">
+                  <div class="stars-card">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                  </div>
+                  <div><p class="soldout-card">Almost Sold Out</p></div>
+                </div>
+              </div>
+            </div>
+            <div id="card-section">
+              <div class="img-card">
+                <img id="img-incard" src="images/clothes.jpg" alt="" />
+              </div>
+              <div class="inside-card">
+                <div class="left-container-incard">
+                  <h4 id="H-card">shiny dress</h4>
+                  <p id="p-card">al karam</p>
+                  <p>custumers</p>
+                  <h6>Price: $50</h6>
+                </div>
+
+                <div class="rating">
+                  <div class="stars-card">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                  </div>
+                  <div><p class="soldout-card">Almost Sold Out</p></div>
+                </div>
+              </div>
+            </div>
+            <div id="card-section">
+              <div class="img-card">
+                <img id="img-incard" src="images/clothes.jpg" alt="" />
+              </div>
+              <div class="inside-card">
+                <div class="left-container-incard">
+                  <h4 id="H-card">shiny dress</h4>
+                  <p id="p-card">al karam</p>
+                  <p>custumers</p>
+                  <h6>Price: $50</h6>
+                </div>
+
+                <div class="rating">
+                  <div class="stars-card">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                  </div>
+                  <div><p class="soldout-card">Almost Sold Out</p></div>
+                </div>
+              </div>
+            </div>
+            <div id="card-section">
+              <div class="img-card">
+                <img id="img-incard" src="images/clothes.jpg" alt="" />
+              </div>
+              <div class="inside-card">
+                <div class="left-container-incard">
+                  <h4 id="H-card">shiny dress</h4>
+                  <p id="p-card">al karam</p>
+                  <p>custumers</p>
+                  <h6>Price: $50</h6>
+                </div>
+
+                <div class="rating">
+                  <div class="stars-card">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                  </div>
+                  <div><p class="soldout-card">Almost Sold Out</p></div>
+                </div>
+              </div>
+            </div>
+            <div id="card-section">
+              <div class="img-card">
+                <img id="img-incard" src="images/clothes.jpg" alt="" />
+              </div>
+              <div class="inside-card">
+                <div class="left-container-incard">
+                  <h4 id="H-card">shiny dress</h4>
+                  <p id="p-card">al karam</p>
+                  <p>custumers</p>
+                  <h6>Price: $50</h6>
+                </div>
+
+                <div class="rating">
+                  <div class="stars-card">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                  </div>
+                  <div><p class="soldout-card">Almost Sold Out</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="viewmore"><a id="view-More" href="">view More</a></div>
+        </div>
+      </div>
+      <div class="section4">
+        <h1 id="header-section4">Follow Us On Instagram</h1>
+        <div id="p-section4">
+          <p id="p-section4-1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
+            duis ultrices sollicitudin aliquam sem.<br />
+            Scelerisque duis ultrices sollicitudin
+          </p>
+        </div>
+        <div class="img-section4">
+          <img id="img-section4-1" src="images/clothes.jpg" alt="" />
+          <img id="img-section4-2" src="images/clothes.jpg" alt="" />
+          <img id="img-section4-1" src="images/clothes.jpg" alt="" />
+          <img id="img-section4-2" src="images/clothes.jpg" alt="" />
+          <img id="img-section4-1" src="images/clothes.jpg" alt="" />
+          <img id="img-section4-2" src="images/clothes.jpg" alt="" />
+          <img id="img-section4-1" src="images/clothes.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="section5">
+       <h1></h1>
+      </div>
+    </main>
+  </body>
+  <scrip src="main.js"></script>
+  
