@@ -542,7 +542,7 @@ body {
 
   align-content: center;
   justify-items: center;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
   border-radius: 20px;
   margin: 2rem 2rem;
 }
@@ -819,6 +819,109 @@ h6 {
 }
 
 @media (max-width: 480px) {
+  .first-page {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    border-radius: 20px;
+    gap: 2rem;
+  }
+  .brands {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    margin-bottom: 4rem;
+    margin-top: 3rem;
+    width: fit-content;
+    margin-bottom: 20rem;
+  }
+  .section2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    background-color: #f5f5f5;
+  }
+  .section3 {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-top: 25rem;
+  }
+  #detail-section3 {
+    max-width: 375px;
+    margin-left: 1rem;
+    padding: 1rem;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+  .sort-section3 {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    align-items: center;
+  }
+  #tag-section3-section3 {
+    padding: none;
+  }
+  .section4 {
+    padding: 1rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    background-color: #f5f5f5;
+    gap: 0rem;
+  }
+  #header-section4 {
+    max-width: 375px;
+    margin-top: 3rem;
+    align-self: center;
+    align-content: center;
+
+    padding-left: 5rem;
+  }
+  #p-section4 {
+    max-width: 375px;
+  }
+  .img-section4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    gap: 0rem;
+  }
+  #img-section4-2 {
+    max-width: 375px;
+    width: 350px;
+    border-radius: 10px;
+  }
+  #img-section4-1 {
+    max-width: 375px;
+    width: 200px;
+    border-radius: 10px;
+  }
+
   .container-navbar li:first-child {
     font-size: 1.5rem;
   }
