@@ -273,7 +273,7 @@ body {
   background-color: #f5f5f5;
   padding: 2.5rem 2.5rem;
   gap: 100px;
-  height: 100vh;
+  height: auto;
 }
 
 .container-leftside {
@@ -328,7 +328,7 @@ body {
 
 .warning-month-deals {
   display: flex;
-  align-self: flex-start;
+  
   font-size: x-large;
   font-style: bold;
 }
@@ -714,13 +714,46 @@ h6 {
 /* Existing CSS remains the same until the end of the file */
 
 /* Responsive Styles */
-@media (max-width: 1200px) {
+@media only screen and (max-width: 1080px) {
   .container-navbar li:first-child {
-    margin-right: 15rem;
+    margin-right: 2rem;
   }
-
+  .logo{
+    justify-content: end;
+    
+  }
+  .header{
+    max-width: 1080px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+  }
   .container-header {
-    grid-template-columns: repeat(2, 1fr);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+  }
+  .first-page{
+    display: flex;
+    flex-direction: column;
+
+    max-width: 1080px;
+    width: 100%;
+
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    
+    
   }
 
   .section2 {
@@ -743,7 +776,7 @@ h6 {
   }
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .container-navbar {
     flex-direction: column;
     height: auto;
@@ -792,37 +825,155 @@ h6 {
 
   .section2 {
     padding: 1.5rem 0;
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
   }
 
   .container-leftside {
-    width: 90%;
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+  }
+  .header-month-deals {
+    padding: 1rem;
+  }
+  .Detail-month-deals {
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    padding: 2rem;
+    padding-top: 1rem;
+  }
+  .warning-month-deals {
+    padding: 1rem;
+    
+    display: flex;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+  #warning-month-deals {
+    padding: 1rem;
+    margin: 00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;  
+    justify-content: center;
+  }
+  .button-buynow-month-deals {
+    padding: 1rem;
   }
 
   .container-rightside {
-    width: 90%;
+    max-width: 768px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    padding-bottom: 2rem;
+  }
+
+  .section3 {
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+  }
+  #detail-section3 {
+    padding: 1rem;
+    max-width: 768px;
+    width: 400px;
+  }
+  .sort-section3 {
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
   }
 
   .content-section3 {
-    grid-template-columns: 1fr;
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+  }
+  .section4 {
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+  }
+  #header-section4 {
+    padding: 2.5rem;
+    margin: 1rem;
+  }
+  #p-section4 {
+    padding: 1rem;
+    max-width: 768px;
+    width: 400px;
+    align-items: center;
+  }
+  #img-section4-2 {
+    max-width: 768px;
+    width: 400px;
+    
+  }
+  #img-section4-1 {
+    max-width: 768px;
+    width: 250px;
+    
   }
 
   .img-section4 {
+    max-width: 768px;
     flex-direction: column;
-    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    width: 768px;
   }
 
-  #img-section4-1,
-  #img-section4-2 {
-    width: 100%;
-    height: auto;
+ 
   }
 }
 
-@media (max-width: 480px) {
+@media only screen and (max-width: 375px) {
+  .header {
+    margin-bottom: 0;
+  }
   .first-page {
-    display: grid;
-    grid-template-columns: 1fr;
-
+    display: flex;
+    flex-direction: column;
+    max-width: 375px;
     justify-content: center;
     align-items: center;
     list-style: none;
@@ -830,36 +981,80 @@ h6 {
     gap: 2rem;
   }
   .brands {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    display: flex;
+    flex-direction: column;
+
     align-items: center;
     justify-content: center;
     align-content: center;
     justify-items: center;
     margin-bottom: 4rem;
     margin-top: 3rem;
-    width: fit-content;
-    margin-bottom: 20rem;
+    width: 400px;
+    max-width: 480;
+    margin-bottom: 2rem;
   }
+
   .section2 {
-    display: grid;
-    grid-template-columns: 1fr;
+    width: auto;
+    max-width: 375px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     align-content: center;
     justify-content: center;
     justify-items: center;
     background-color: #f5f5f5;
+    padding-bottom: 2rem;
+  }
+  .container-leftside {
+    width: 100%;
+    max-width: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 1rem;
+  }
+  .header-month-deals {
+    display: flex;
+    max-width: 375px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 1rem;
+  }
+  .Detail-month-deals {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .button-buynow-month-deals {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .warning-month-deals {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
   }
   .section3 {
     width: 100%;
-    height: auto;
+
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
     align-content: center;
     justify-content: center;
-    margin-top: 25rem;
+    margin-top: 1rem;
   }
   #detail-section3 {
     max-width: 375px;
@@ -871,15 +1066,34 @@ h6 {
     justify-items: center;
   }
   .sort-section3 {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
 
     align-items: center;
   }
-  #tag-section3-section3 {
-    padding: none;
+
+  #tag-section3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+
+    text-decoration: none;
+    color: white;
+    background-color: #000;
+    border-radius: 10px;
+    padding: 1rem 0rem;
+    margin: 1rem;
+    width: 200px;
   }
+
   .section4 {
+    max-width: 375px;
     padding: 1rem 0rem;
     display: flex;
     flex-direction: column;
@@ -892,15 +1106,28 @@ h6 {
   }
   #header-section4 {
     max-width: 375px;
-    margin-top: 3rem;
+
     align-self: center;
     align-content: center;
 
     padding-left: 5rem;
+    padding-bottom: 2rem;
   }
   #p-section4 {
     max-width: 375px;
+    align-self: center;
+    align-content: center;
+    padding: 2rem;
+    margin-left: 1rem;
   }
+  #p-section4-1 {
+    max-width: 375px;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+  }
+
   .img-section4 {
     display: flex;
     flex-direction: column;
@@ -922,6 +1149,33 @@ h6 {
     border-radius: 10px;
   }
 
+  .content-section3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    padding: 1rem;
+  }
+  #card-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+  }
+  .rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+  }
   .container-navbar li:first-child {
     font-size: 1.5rem;
   }
