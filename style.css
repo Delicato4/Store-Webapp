@@ -328,7 +328,7 @@ body {
 
 .warning-month-deals {
   display: flex;
-  
+
   font-size: x-large;
   font-style: bold;
 }
@@ -718,11 +718,10 @@ h6 {
   .container-navbar li:first-child {
     margin-right: 2rem;
   }
-  .logo{
+  .logo {
     justify-content: end;
-    
   }
-  .header{
+  .header {
     max-width: 1080px;
     width: 100%;
     display: flex;
@@ -733,7 +732,6 @@ h6 {
     justify-items: center;
   }
   .container-header {
-    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -741,7 +739,7 @@ h6 {
     align-content: center;
     justify-items: center;
   }
-  .first-page{
+  .first-page {
     display: flex;
     flex-direction: column;
 
@@ -752,8 +750,6 @@ h6 {
     justify-content: center;
     align-content: center;
     justify-items: center;
-    
-    
   }
 
   .section2 {
@@ -856,7 +852,7 @@ h6 {
   }
   .warning-month-deals {
     padding: 1rem;
-    
+
     display: flex;
     justify-items: center;
     align-content: center;
@@ -869,7 +865,7 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: center;
-    align-content: center;  
+    align-content: center;
     justify-content: center;
   }
   .button-buynow-month-deals {
@@ -944,12 +940,10 @@ h6 {
   #img-section4-2 {
     max-width: 768px;
     width: 400px;
-    
   }
   #img-section4-1 {
     max-width: 768px;
     width: 250px;
-    
   }
 
   .img-section4 {
@@ -960,9 +954,6 @@ h6 {
     justify-items: center;
     align-content: center;
     width: 768px;
-  }
-
- 
   }
 }
 
