@@ -12,7 +12,11 @@ function moveSlide(direction) {
     if (currentSlideIndex < 1) {
         currentSlideIndex = totalSlides;
     }
-    
+    document.addEventListener("DOMContentLoaded", function () 
+    {
+    updateSlider();
+});
+
     updateSlider();
 }
 

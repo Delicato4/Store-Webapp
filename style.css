@@ -19,18 +19,17 @@
 
 header {
   display: flex;
+  align-content: center;
+  justify-items: center;
   justify-content: center;
   align-items: center;
   padding: 2.5rem 2rem;
 }
 
 main {
+  align-content: center;
   align-items: center;
   justify-content: center;
-  max-width: auto;
-  min-height: auto;
-  min-width: auto;
-  max-height: auto;
 }
 
 body {
@@ -38,7 +37,14 @@ body {
   background-color: #ffffff;
   color: #000000;
   padding: 0%;
+  width: auto;
+  max-width: auto;
+
+  display: flex;
+  align-self: center;
+  justify-self: center;
 }
+
 .container-navbar {
   width: 100%;
   height: 100px;
@@ -79,7 +85,6 @@ body {
   display: flex;
   margin-left: 0%;
   justify-content: flex-start;
-  margin-right: 28rem;
 }
 
 .container-navbar li:last-child {
@@ -108,7 +113,7 @@ body {
 }
 
 .container-header {
-  min-width: 425px;
+  min-width: 360px;
   max-width: 1200px;
 
   display: grid;
@@ -265,22 +270,26 @@ body {
   font-size: 2rem;
   font-family: "Bruno Ace", serif;
 }
+
 .section2 {
+  max-width: 2560px;
+  width: auto;
+
   display: flex;
   align-items: center;
+  align-content: center;
+  justify-items: center;
   justify-content: center;
 
   background-color: #f5f5f5;
-  padding: 2.5rem 2.5rem;
+
   gap: 100px;
-  height: auto;
+  height: 700px;
 }
 
 .container-leftside {
-  width: 30%;
-
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  display: flex;
+  flex-direction: column;
 }
 
 .header-month-deals {
@@ -301,6 +310,7 @@ body {
   align-items: flex-start;
   padding: 1rem 0rem;
   padding-bottom: 1.5rem;
+  max-width: 400px;
 }
 #Detail-month-deals {
   color: #474747;
@@ -334,7 +344,7 @@ body {
 }
 #warning-month-deals {
   display: flex;
-  font-size: 2.5rem;
+  font-size: 2rem;
   white-space: nowrap;
 }
 .container-rightside {
@@ -344,6 +354,7 @@ body {
   align-items: center;
   min-height: 424px;
   max-width: 100vh;
+  margin-left: 3rem;
 }
 
 .slider-container {
@@ -362,7 +373,6 @@ body {
 }
 
 .slide {
-  min-width: 100%;
   position: relative;
 }
 
@@ -473,6 +483,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .container-section3 {
   display: grid;
   grid-template-columns: repeat(1fr);
@@ -487,6 +498,7 @@ body {
   font-size: 40px;
   padding: 1.5rem 0rem;
   margin-top: 2rem;
+  font-weight: 700;
 }
 .detail-section3 {
   display: flex;
@@ -661,7 +673,7 @@ h6 {
   padding: 1rem 0rem;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-
+  width: auto;
   grid-template-rows: repeat(1, 1fr);
   align-items: center;
   justify-content: center;
@@ -673,15 +685,16 @@ h6 {
   width: auto;
   height: auto;
   justify-content: center;
+  align-content: center;
+  justify-items: center;
   margin-bottom: 6rem;
   margin-top: 6rem;
 }
 #img-section4-1 {
-  width: 256px;
-  height: 308px;
+  width: 270px;
 }
 #img-section4-2 {
-  height: 380px;
+  width: 320px;
 }
 #header-section4 {
   display: flex;
@@ -691,6 +704,7 @@ h6 {
   font-size: 40px;
   margin-bottom: 2rem;
   margin-top: 4em;
+  font-weight: 600;
 }
 #p-section4 {
   display: flex;
@@ -714,16 +728,159 @@ h6 {
 /* Existing CSS remains the same until the end of the file */
 
 /* Responsive Styles */
-@media only screen and (max-width: 1080px) {
-  .container-navbar li:first-child {
-    margin-right: 2rem;
+
+@media only screen and (min-width: 1080px) and (max-width: 1920px) {
+  body {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
   }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .header {
+    max-width: 1080px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+  }
+  .container-navbar {
+    max-width: 1080px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+  .section2 {
+    width: auto;
+    width: 100%;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+
+  #header-month-deals {
+    font-size: 2.5rem;
+  }
+  #Detail-month-deals {
+    max-width: 350px;
+  }
+  #warning-month-deals {
+    max-width: 350px;
+    font-size: 2rem;
+  }
+
+  .container-leftside {
+    padding: 2rem;
+  }
+  .container-rightside {
+    padding: 2rem;
+  }
+  .section3 {
+    max-width: 1920px;
+  }
+  .container-section3 {
+    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+  .sort-section3 {
+    max-width: 1920px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+  .content-section3 {
+    max-width: 1920px;
+  }
+  #card-section {
+    width: 300px;
+  }
+  .img-card {
+    width: 300px;
+  }
+
+  #tag-section3 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+
+  #img-section4-1 {
+    width: 140px;
+  }
+  #img-section4-2 {
+    width: 170px;
+  }
+
+  .section4 {
+    max-width: 1920px;
+    width: auto;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+  .img-section4 {
+    display: flex;
+
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 1080px) and (min-width: 768px) {
+  body {
+    max-width: 1080px;
+    width: auto;
+    width: 100%;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    align-items: center;
+  }
+  main {
+    width: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+
   .logo {
     justify-content: end;
   }
   .header {
-    max-width: 1080px;
-    width: 100%;
+    max-width: 768px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -732,19 +889,27 @@ h6 {
     justify-items: center;
   }
   .container-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 1rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+
     justify-items: center;
+    justify-content: center;
   }
   .first-page {
     display: flex;
     flex-direction: column;
 
-    max-width: 1080px;
+    max-width: 768px;
     width: 100%;
+
+    gap: 3rem;
 
     align-items: center;
     justify-content: center;
@@ -752,27 +917,135 @@ h6 {
     justify-items: center;
   }
 
+  .brands {
+    max-width: 768px;
+
+    gap: 0.7rem;
+  }
+  #CHANEL {
+    font-size: 2rem;
+  }
+  #LOUIS-VUITTON {
+    font-size: 1.4rem;
+    font-family: serif;
+  }
+  #PRADA {
+    font-size: 2rem;
+
+    font-family: "Alfa Slab One";
+  }
+  #CALVIN-KLEIN {
+    font-size: 1rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  #DENIM {
+    font-size: 2rem;
+    font-family: "Bruno Ace", serif;
+  }
+
   .section2 {
+    padding: 2rem 0rem;
+    display: flex;
     flex-direction: column;
     gap: 50px;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    padding-bottom: 3rem;
+    max-width: 1080px;
+    width: 100%;
+
+    height: auto;
+    margin-top: 1rem;
   }
 
   .container-leftside {
-    width: 80%;
+    max-width: 768px;
+    width: auto;
     margin-left: 0;
     padding-right: 0;
+    justify-items: center;
   }
 
+  #Detail-month-deals {
+    max-width: 650px;
+  }
   .container-rightside {
-    width: 80%;
+    align-self: center;
+    align-content: center;
+    margin-left: 0;
   }
-
+  .img-card {
+    max-width: 100%;
+    height: auto;
+  }
+  #img-incard {
+    max-width: 100%;
+    height: auto;
+  }
+  .section3 {
+    max-width: 768px;
+  }
+  #card-section {
+    max-width: 400px;
+  }
   .content-section3 {
+    max-width: 768px;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .sort-section3 {
+    max-width: 768px;
+    align-content: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  #tag-section3 {
+    max-width: 110px;
+    align-content: center;
+    justify-content: center;
+  }
+  #card-section {
+    margin: 1rem;
+  }
+  .section4 {
+    max-width: 1080px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-content: center;
+    justify-content: center;
+  }
+  .img-section4 {
+    align-content: center;
+    justify-content: center;
+  }
+  #header-section4 {
+    margin-top: 3rem;
+  }
+  #img-section4-1 {
+    width: 90px;
+  }
+  #img-section4-2 {
+    width: 100px;
   }
 }
 
 @media only screen and (max-width: 768px) {
+  body {
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    align-content: center;
+  }
   .container-navbar {
     flex-direction: column;
     height: auto;
@@ -822,12 +1095,14 @@ h6 {
   .section2 {
     padding: 1.5rem 0;
     max-width: 768px;
+    width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     justify-items: center;
     align-content: center;
+    height: auto;
   }
 
   .container-leftside {
@@ -838,6 +1113,10 @@ h6 {
     justify-content: center;
     justify-items: center;
     align-content: center;
+  }
+  .container-rightside {
+    max-width: 768px;
+    margin: 0;
   }
   .header-month-deals {
     padding: 1rem;
@@ -894,7 +1173,6 @@ h6 {
     align-content: center;
   }
   #detail-section3 {
-    padding: 1rem;
     max-width: 768px;
     width: 400px;
   }
@@ -920,6 +1198,7 @@ h6 {
   }
   .section4 {
     max-width: 768px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -953,24 +1232,60 @@ h6 {
     justify-content: center;
     justify-items: center;
     align-content: center;
-    width: 768px;
   }
 }
 
 @media only screen and (max-width: 375px) {
+  body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    align-content: center;
+  }
+  .container-header {
+    max-width: 375px;
+  }
+  .image-text {
+    max-width: 375px;
+  }
   .header {
     margin-bottom: 0;
+    max-width: 375px;
+    width: auto;
   }
   .first-page {
     display: flex;
     flex-direction: column;
     max-width: 375px;
+    width: auto;
     justify-content: center;
     align-items: center;
     list-style: none;
     border-radius: 20px;
     gap: 2rem;
   }
+  .image1 {
+    max-width: 350px;
+  }
+  .image2 {
+    max-width: 350px;
+  }
+  .image3 {
+    max-width: 350px;
+  }
+  .image4 {
+    max-width: 350px;
+  }
+  firs .container-header {
+    max-width: 375px;
+  }
+
   .brands {
     display: flex;
     flex-direction: column;
@@ -981,14 +1296,14 @@ h6 {
     justify-items: center;
     margin-bottom: 4rem;
     margin-top: 3rem;
-    width: 400px;
-    max-width: 480;
+    width: 100%;
+
     margin-bottom: 2rem;
   }
 
   .section2 {
-    width: auto;
-    max-width: 375px;
+    width: 100%;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1000,7 +1315,6 @@ h6 {
   }
   .container-leftside {
     width: 100%;
-    max-width: 375px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1009,20 +1323,31 @@ h6 {
     justify-items: center;
     padding: 1rem;
   }
+  .container-rightside {
+    max-width: 375px;
+    width: 100%;
+  }
   .header-month-deals {
     display: flex;
-    max-width: 375px;
+    max-width: 375;
     align-items: center;
     align-content: center;
     justify-content: center;
     justify-items: center;
     padding: 1rem;
   }
+  #header-month-deals {
+    font-size: 1rem;
+  }
   .Detail-month-deals {
+    max-width: 375px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 1rem;
+  }
+  #Detail-month-deals {
+    max-width: 200px;
   }
   .button-buynow-month-deals {
     display: flex;
@@ -1037,10 +1362,11 @@ h6 {
     padding: 1rem;
   }
   .section3 {
-    width: 100%;
+    width: auto;
+    max-width: 100%;
 
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     justify-items: center;
     align-items: center;
     align-content: center;
@@ -1084,7 +1410,7 @@ h6 {
   }
 
   .section4 {
-    max-width: 375px;
+    max-width: 100%;
     padding: 1rem 0rem;
     display: flex;
     flex-direction: column;
@@ -1096,7 +1422,7 @@ h6 {
     gap: 0rem;
   }
   #header-section4 {
-    max-width: 375px;
+    max-width: 100%;
 
     align-self: center;
     align-content: center;
@@ -1247,5 +1573,22 @@ h6 {
   .soldout-card {
     margin-top: 1rem;
     margin-left: 0;
+  }
+
+  #header-section3 {
+    font-weight: 600;
+  }
+  #header-section4 {
+    font-size: 2rem;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 1.5rem;
+  }
+  #p-section4 {
+    font-size: 1.5rem;
   }
 }
